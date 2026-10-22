@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,27 +8,45 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <main class="page">
     <header class="site-header">
       <h1>Aashish Raj</h1>
-      <p class="tagline">I build practical digital tools for businesses.</p>
+      <nav class="social-links" aria-label="Social links">
+        <a href="YOUR_GITHUB_URL"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+        <a href="YOUR_LINKEDIN_URL"><i class="fa-brands fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+        <a href="mailto:YOUR_EMAIL"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Mail</span></a>
+        <a href="YOUR_RESUME_URL"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i><span>Resume</span></a>
+      </nav>
     </header>
 
     <section class="intro" aria-labelledby="about-heading">
       <h2 id="about-heading">Who Am I?</h2>
-      <p>I'm a developer interested in business applications, ERP systems, and thoughtful web experiences.</p>
+      <ul>
+        <li>A pragmatic software engineer.</li>
+        <li>Crafts custom ERP solutions.</li>
+        <li>Goes for brisk walks on most evenings.</li>
+        <li>Someone who frequently shaves his head.</li>
+      </ul>
     </section>
 
     <section class="services" aria-labelledby="services-heading">
       <h2 id="services-heading">Services</h2>
-      <ul>
-        <li>Business applications</li>
-        <li>ERP systems</li>
-        <li>Website development</li>
-      </ul>
+      <p class="services-description">
+        Specialized exclusively in Odoo ERP.
+      </p>
+      <ol>
+        <li>Implementation</li>
+        <li>Customization</li>
+        <li>Module Development</li>
+        <li>Integrations</li>
+        <li>Data Migration</li>
+        <li>Support & Maintenance</li>
+      </ol>
     </section>
 
     <section class="link-cards" aria-label="Explore">
@@ -38,7 +57,6 @@
           <a href="#">Books</a>
         </nav>
       </details>
-
       <details class="card">
         <summary>Output</summary>
         <nav class="links" aria-label="Output links">
@@ -46,7 +64,6 @@
           <a href="#">Projects</a>
         </nav>
       </details>
-
       <details class="card">
         <summary>Extra</summary>
         <nav class="links" aria-label="Extra links">
@@ -57,4 +74,5 @@
     </section>
   </main>
 </body>
+
 </html>
