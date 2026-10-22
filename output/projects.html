@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
   <main class="page projects-page">
     <a class="back-link" href="../index.html">Home</a>
@@ -22,24 +24,88 @@
       <h2 id="year-2026">2026</h2>
 
       <article class="project">
-        <h3><a href="#">End-To-End Encrypted CLI Secrets Manager</a> <span class="project-status status-progress">In Development</span></h3>
-        <p class="project-stack"><strong>Tech Stack:</strong> Go</p>
+        <h3>
+          <a href="https://github.com/iamtheaashish/DentalClinicERPSystem">Dental Clinic ERP System</a>
+          <span class="project-status status-ready">Production Ready</span>
+        </h3>
+        <p class="project-stack"><strong>Tech Stack:</strong> ASP.NET Core 10 (MVC), Entity Framework Core, Bootstrap 5,
+          SQL Server</p>
         <p class="project-features-label"><strong>Features:</strong></p>
-        <ul class="project-features">
-        </ul>
+        <ol class="project-features">
+          <li>N-Tier Architecture, OAuth 2.0-based RBAC (Admin, Receptionist, Doctor) via Microsoft Entra ID.</li>
+          <li>Patient Registration, Appointment Scheduling, Invoicing, Graphical 2D Tooth Chart, Reports.</li>
+          <li>HIPAA-inspired design: Automatic Logoff and Inactivity Timeout, AES-256 encryption at rest and TLS in
+            transit, and audit logs (userId, IP, timestamp, and database actions) in Azure Blob Storage.</li>
+        </ol>
       </article>
 
       <article class="project">
-        <h3><a href="#">Dental Clinic ERP</a> <span class="project-status status-ready">Production Ready</span></h3>
-        <p class="project-stack"><strong>Tech Stack:</strong> ASP.NET Core 10 (MVC), Entity Framework Core, Bootstrap 5, SQL Server</p>
+        <h3>
+          <a href="https://github.com/iamtheaashish/BulkyBook">BulkyBook - Udemy Course</a>
+          <span class="project-status status-ready">Production Ready</span>
+        </h3>
+
+        <p class="project-stack">
+          <strong>Tech Stack:</strong> ASP.NET Core MVC, C#, Entity Framework Core, Bootstrap, PostgreSQL
+        </p>
+
         <p class="project-features-label"><strong>Features:</strong></p>
         <ol class="project-features">
-          <li>N-Tier Architecture, OAuth 2.0 based RBAC (Admin, Receptionist, Doctor) via Microsoft Entra ID.</li>
-          <li>Patient Registration, Appointment Scheduling, Invoicing, Graphical 2D Tooth Chart, Reports.</li>
-          <li>HIPAA Compliance Inspired Design: Automatic Logoff &amp; Inactivity Timeout, AES-256 encryption at rest &amp; TLS in transit, Audit Logs (userId, IP, Timestamp with Actions on DB) in Azure Blob Storage.</li>
+          <li>Multi-project solution separating business logic, data access, models, utilities, and the web application.
+          </li>
+          <li>Structured application architecture designed for maintainability and separation of concerns.</li>
+          <li>Database integration using Entity Framework Core.</li>
         </ol>
+      </article>
+
+      <article class="project">
+        <h3>
+          <a href="https://github.com/iamtheaashish/FountainOfObjectsGame">Fountain of Objects Game</a>
+          <span class="project-status status-ready">Production Ready</span>
+        </h3>
+        <p class="project-stack"><strong>Tech Stack:</strong> C#, .NET Core</p>
+        <p class="project-features-label"><strong>Features:</strong></p>
+        <ol class="project-features">
+          <li>2D console-based, command-driven adventure game in C# using object-oriented principles.</li>
+          <li>Grid-based navigation, random map generation, and game events with win/loss conditions.</li>
+          <li>Player state management, including death from falling into a pit or encountering a monster, and
+            game-ending events.</li>
+          <li>Modular architecture with dedicated classes for logic, maps, rooms, locations, and interactions.</li>
+        </ol>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/axqiDVTY46M?autoplay=0&amp;mute=1"
+            title="Fountain of Objects Game demo" loading="lazy" allowfullscreen>
+          </iframe>
+        </div>
+      </article>
+
+      <article class="project">
+        <h3>
+          <a href="https://github.com/iamtheaashish/Tic-Tac-Toe">OOP Tic-Tac-Toe</a>
+          <span class="project-status status-ready">Production Ready</span>
+        </h3>
+
+        <p class="project-stack">
+          <strong>Tech Stack:</strong> C#
+        </p>
+
+        <p class="project-features-label"><strong>Features:</strong></p>
+        <ol class="project-features">
+          <li>Object-oriented implementation demonstrating encapsulation, abstraction, and separation of
+            responsibilities.</li>
+          <li>Interactive two-player gameplay with turn management and move validation.</li>
+          <li>Win and draw detection based on board state and winning combinations.</li>
+          <li>Modular game logic designed for readability and maintainability.</li>
+        </ol>
+
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/5kr0ukM1R7U?autoplay=0&amp;mute=1" title="OOP Tic-Tac-Toe demo"
+            loading="lazy" allowfullscreen>
+          </iframe>
+        </div>
       </article>
     </section>
   </main>
 </body>
+
 </html>
