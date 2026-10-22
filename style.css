@@ -24,7 +24,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, p, ul {
+h1,
+h2,
+p,
+ul {
   margin-top: 0;
 }
 
@@ -44,6 +47,7 @@ h2 {
   font-weight: 600;
 }
 
+/* Site header and navigation */
 .site-header {
   margin-bottom: 28px;
 }
@@ -72,6 +76,15 @@ h2 {
   text-underline-offset: 3px;
 }
 
+.social-links a:focus-visible,
+.links a:focus-visible,
+.card summary:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Home page */
 .intro {
   margin-bottom: 22px;
 }
@@ -89,17 +102,14 @@ h2 {
   margin-bottom: 8px;
 }
 
-.services ol {
+.services ol,
+.services ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 40px;
 }
 
-.services ul {
-  margin-bottom: 0;
-  padding-left: 40px;
-}
-
+/* Expandable navigation cards */
 .link-cards {
   display: grid;
   gap: 8px;
@@ -148,14 +158,6 @@ h2 {
   background: var(--surface-hover);
 }
 
-.card summary:focus-visible,
-.social-links a:focus-visible,
-.links a:focus-visible {
-  outline: 2px solid var(--focus);
-  outline-offset: 3px;
-  border-radius: 2px;
-}
-
 .links {
   display: flex;
   flex-wrap: wrap;
@@ -169,36 +171,7 @@ h2 {
   text-underline-offset: 3px;
 }
 
-/* Books page */
-.back-link {
-  display: inline-block;
-  margin-bottom: 2px;
-  color: var(--accent, #087eaa);
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.back-link:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.page-header {
-  margin-bottom: 30px;
-}
-
-.subtitle {
-  margin-bottom: 0;
-  color: var(--muted);
-  font-size: 1.05rem;
-}
-
-.year-section h2 {
-  margin-bottom: 14px;
-  font-size: 1.2rem;
-}
-
-/* Books page */
+/* Shared page headers and back links */
 .back-link {
   display: inline-block;
   margin-bottom: 2px;
@@ -210,6 +183,7 @@ h2 {
 .back-link:hover {
   color: var(--text);
   text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .page-header {
@@ -222,42 +196,51 @@ h2 {
   font-size: 1.05rem;
 }
 
-.year-section h2 {
+/* Books and articles */
+.year-section h2,
+.bytings-section h2 {
   margin-bottom: 14px;
   font-size: 1.2rem;
 }
 
-.book-list {
+.book-list,
+.article-list {
   margin: 0;
   padding-left: 24px;
 }
 
-.book {
+.book,
+.article {
   padding-left: 4px;
   margin-bottom: 18px;
 }
 
-.book-title {
+.book-title,
+.article-title {
   margin-bottom: 10px;
   font-weight: 500;
 }
 
-.book-title a {
+.book-title a,
+.article-title a {
   color: var(--text);
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 
-.book-title a:hover {
+.book-title a:hover,
+.article-title a:hover {
   color: var(--muted);
 }
 
-.book-title span:not(.badge) {
+.book-title span:not(.badge),
+.article-title span {
   color: var(--muted);
   font-weight: 400;
 }
 
-.book-note {
+.book-note,
+.article-note {
   margin-bottom: 0;
   color: var(--muted);
   line-height: 1.75;
@@ -271,57 +254,6 @@ h2 {
   border-radius: 4px;
   color: var(--muted);
   font-size: 12px;
-}
-
-@media (max-width: 520px) {
-  .page-header {
-    margin-bottom: 24px;
-  }
-
-  .book-list {
-    padding-left: 20px;
-  }
-
-  .book {
-    margin-bottom: 20px;
-  }
-}
-
-/* Articles page */
-.article-list {
-  margin: 0;
-  padding-left: 24px;
-}
-
-.article {
-  padding-left: 4px;
-  margin-bottom: 18px;
-}
-
-.article-title {
-  margin-bottom: 10px;
-  font-weight: 500;
-}
-
-.article-title a {
-  color: var(--text);
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.article-title a:hover {
-  color: var(--muted);
-}
-
-.article-title span {
-  color: var(--muted);
-  font-weight: 400;
-}
-
-.article-note {
-  margin-bottom: 0;
-  color: var(--muted);
-  line-height: 1.75;
 }
 
 /* Vertical timeline */
@@ -359,9 +291,9 @@ h2 {
 }
 
 .timeline-date {
+  margin-bottom: 8px;
   color: var(--muted);
   font-size: 14px;
-  margin-bottom: 8px;
 }
 
 /* Bytings page */
@@ -386,11 +318,6 @@ h2 {
   font-weight: 600;
 }
 
-.bytings-section h2 {
-  margin-bottom: 14px;
-  font-size: 1.2rem;
-}
-
 .bytings-list {
   margin: 0;
   padding-left: 24px;
@@ -401,7 +328,22 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Tinkering videos */
+.bytings-list li::marker {
+  color: var(--muted);
+}
+
+.bytings-list a {
+  color: var(--text);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.bytings-list a:hover {
+  color: var(--muted);
+}
+
+/* Videos */
 .video-list {
   margin-top: 32px;
 }
@@ -418,8 +360,8 @@ h2 {
 
 .video-embed {
   position: relative;
-  aspect-ratio: 16 / 9;
   width: 100%;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   background: var(--surface-hover);
 }
@@ -442,33 +384,6 @@ h2 {
   text-underline-offset: 4px;
 }
 
-@media (max-width: 520px) {
-  .video-list {
-    margin-top: 24px;
-  }
-
-  .video-item {
-    margin-bottom: 24px;
-    padding-bottom: 24px;
-  }
-}
-
-.bytings-list li::marker {
-  color: var(--muted);
-}
-
-.bytings-list a {
-  color: var(--text);
-  font-weight: 500;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.bytings-list a:hover {
-  color: var(--muted);
-}
-
-/* Projects page */
 /* Projects page */
 .project {
   padding: 0 0 32px;
@@ -477,9 +392,9 @@ h2 {
 }
 
 .project:last-child {
-  border-bottom: 0;
-  margin-bottom: 0;
   padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
 }
 
 .project h3 {
@@ -514,6 +429,7 @@ h2 {
   margin-bottom: 10px;
 }
 
+/* Project status */
 .project-status {
   display: inline-block;
   padding: 2px 7px;
@@ -525,6 +441,7 @@ h2 {
   vertical-align: 2px;
 }
 
+/* Footer */
 .site-footer {
   margin-top: 48px;
   color: var(--muted);
@@ -536,34 +453,7 @@ h2 {
   margin: 0;
 }
 
-@media (max-width: 520px) {
-  .project {
-    margin-bottom: 24px;
-    padding-bottom: 24px;
-  }
-}
-
-@media (max-width: 520px) {
-  .subscribe-note {
-    margin: 32px 0 26px;
-    padding: 12px 14px;
-  }
-
-  .bytings-list {
-    padding-left: 20px;
-  }
-}
-
-@media (max-width: 520px) {
-  .article-list {
-    padding-left: 20px;
-  }
-
-  .article {
-    margin-bottom: 20px;
-  }
-}
-
+/* Responsive styles */
 @media (max-width: 520px) {
   body {
     padding: 36px 16px;
@@ -571,6 +461,40 @@ h2 {
 
   .site-header {
     margin-bottom: 24px;
+  }
+
+  .page-header {
+    margin-bottom: 24px;
+  }
+
+  .book-list,
+  .article-list,
+  .bytings-list {
+    padding-left: 20px;
+  }
+
+  .book,
+  .article {
+    margin-bottom: 20px;
+  }
+
+  .subscribe-note {
+    margin: 32px 0 26px;
+    padding: 12px 14px;
+  }
+
+  .video-list {
+    margin-top: 24px;
+  }
+
+  .video-item {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+  }
+
+  .project {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
   }
 }
 
