@@ -401,6 +401,58 @@ h2 {
   margin-bottom: 10px;
 }
 
+/* Tinkering videos */
+.video-list {
+  margin-top: 32px;
+}
+
+.video-item {
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+.video-item:last-child {
+  border-bottom: 0;
+}
+
+.video-embed {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  overflow: hidden;
+  background: var(--surface-hover);
+}
+
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-item h2 {
+  margin: 12px 0 0;
+  font-size: 1rem;
+}
+
+.video-item h2 a {
+  color: var(--text);
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 520px) {
+  .video-list {
+    margin-top: 24px;
+  }
+
+  .video-item {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+  }
+}
+
 .bytings-list li::marker {
   color: var(--muted);
 }
