@@ -4,36 +4,57 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aashish Raj</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Aashish Raj</h1>
-  <div class="intro">
-    <div>
-      <h2>About Me</h2>
-      <p>Engineering. Techno-Capitalism.</p>
-      <h2>Services</h2>
-      <p>I build custom software solutions for small businesses that want to make their operations more efficient and seamless. 
-<br><br>
-        Over the last two years, I’ve shipped custom software (CRM and ERP), AI-integrated tools, and client applications built with ASP.NET Core MVC, Web API, Azure, Vite + ReactTS. My work ranges from designing and developing full-stack applications to architecting cloud infrastructure on Azure. 
-<br><br>
-        I also regularly use AI APIs to create real and useful tools rather than just chatbot wrappers. 
-<br><br>
-        I am open to both freelance projects and job opportunities. If you’re a founder with an idea, a small business that needs to make its operations smoother, or a team that needs an extra Full Stack .NET developer, I’d love to hear what you’re building.
-      </p>
-    </div>
-  </div>
-  <details class="section">
-    <summary>Input</summary>
-    <div class="links"><a href="#">Articles</a><a href="#">Books</a></div>
-  </details>
-  <details class="section">
-    <summary>Output</summary>
-    <div class="links"><a href="#">Bytings</a><a href="#">Projects</a></div>
-  </details>
-  <details class="section">
-    <summary>Extra</summary>
-    <div class="links"><a href="#">Grateful</a><a href="#">Hardware</a></div>
-  </details>
+  <main class="page">
+    <header class="site-header">
+      <h1>Aashish Raj</h1>
+      <p class="tagline">I build practical digital tools for businesses.</p>
+    </header>
+
+    <section class="intro" aria-labelledby="about-heading">
+      <h2 id="about-heading">Who Am I?</h2>
+      <p>I'm a developer interested in business applications, ERP systems, and thoughtful web experiences.</p>
+    </section>
+
+    <section class="services" aria-labelledby="services-heading">
+      <h2 id="services-heading">Services</h2>
+      <ul>
+        <li>Business applications</li>
+        <li>ERP systems</li>
+        <li>Website development</li>
+      </ul>
+    </section>
+
+    <section class="link-cards" aria-label="Explore">
+      <details class="card">
+        <summary>Input</summary>
+        <nav class="links" aria-label="Input links">
+          <a href="#">Articles</a>
+          <a href="#">Books</a>
+        </nav>
+      </details>
+
+      <details class="card">
+        <summary>Output</summary>
+        <nav class="links" aria-label="Output links">
+          <a href="#">Bytings</a>
+          <a href="#">Projects</a>
+        </nav>
+      </details>
+
+      <details class="card">
+        <summary>Extra</summary>
+        <nav class="links" aria-label="Extra links">
+          <a href="#">Grateful</a>
+          <a href="#">Hardware</a>
+        </nav>
+      </details>
+    </section>
+  </main>
 </body>
 </html>
