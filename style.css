@@ -169,6 +169,171 @@ h2 {
   text-underline-offset: 3px;
 }
 
+/* Books page */
+.back-link {
+  display: inline-block;
+  margin-bottom: 2px;
+  color: var(--accent, #087eaa);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.year-section h2 {
+  margin-bottom: 14px;
+  font-size: 1.2rem;
+}
+
+/* Books page */
+.back-link {
+  display: inline-block;
+  margin-bottom: 2px;
+  color: var(--muted);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+.page-header {
+  margin-bottom: 28px;
+}
+
+.subtitle {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.year-section h2 {
+  margin-bottom: 14px;
+  font-size: 1.2rem;
+}
+
+.book-list {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.book {
+  padding-left: 4px;
+  margin-bottom: 18px;
+}
+
+.book-title {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.book-title a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.book-title a:hover {
+  color: var(--muted);
+}
+
+.book-title span:not(.badge) {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.book-note {
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.badge {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 1px 7px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+@media (max-width: 520px) {
+  .page-header {
+    margin-bottom: 24px;
+  }
+
+  .book-list {
+    padding-left: 20px;
+  }
+
+  .book {
+    margin-bottom: 20px;
+  }
+}
+
+/* Articles page */
+.article-list {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.article {
+  padding-left: 4px;
+  margin-bottom: 18px;
+}
+
+.article-title {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.article-title a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.article-title a:hover {
+  color: var(--muted);
+}
+
+.article-title span {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.article-note {
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+@media (max-width: 520px) {
+  .article-list {
+    padding-left: 20px;
+  }
+
+  .article {
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 520px) {
   body {
     padding: 36px 16px;
