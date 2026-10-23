@@ -40,11 +40,11 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 8px;
-  font-size: 1.05rem;
+  margin-bottom: 12px;
+  font-size: 1.15rem;
   line-height: 1.4;
   letter-spacing: -0.015em;
-  font-weight: 600;
+  font-weight: 650;
 }
 
 /* Site header and navigation */
@@ -443,7 +443,7 @@ h2 {
 
 /* Footer */
 .site-footer {
-  margin-top: 48px;
+  margin-top: 32px;
   color: var(--muted);
   font-size: 12px;
   line-height: 1.5;
