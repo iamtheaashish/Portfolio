@@ -94,20 +94,6 @@ h2 {
   margin-bottom: 0;
 }
 
-.services {
-  margin-bottom: 20px;
-}
-
-.services-description {
-  margin-bottom: 8px;
-}
-
-.services ol,
-.services ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 40px;
-}
 
 /* Expandable navigation cards */
 .link-cards {
