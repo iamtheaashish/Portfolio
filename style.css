@@ -282,6 +282,13 @@ h2 {
   font-size: 14px;
 }
 
+.timeline-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: block;
+}
 /* Bytings page */
 .subscribe-note {
   display: flex;
